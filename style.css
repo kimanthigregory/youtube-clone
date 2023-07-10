@@ -1,72 +1,189 @@
- body {
-    margin: 0;
-    padding: 0;
+body{
     font-family: sans-serif;
-    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    margin:0;
+    padding: 60px 0 0 82px;
+    background-color: rgb(243, 240, 240);
 
- }
- .center{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 400px;
+} 
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
     background-color: white;
-    border-radius: 5px;
- }
- .center h1 {
-    text-align: center;
-    padding-bottom:20px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid silver;
- }
- form .input-type{
-    margin:0 25px ;
-    border-bottom:2px solid #adadad ;
- }
-.input-type input{
-    height:40px;
-    width:100%;
-    font-size:16px;
-    outline:none;
-    border:none;
+    height: 50px;
+    border-bottom: 1px solid #adadad ;
+    z-index: 100;
+}
+.left-section{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 0 0 0 20px;
+}
+.menu{
+    height: 30px;
 
 }
- .input-type label{
-    color: #adadad;
+.logo{
+    height: 30px;
 }
-.pass{
-    margin:10px 25px 0 25px;
-    color:#adadad;
 
-
+.middle-section{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    margin: 0 100px 0 100px;
 }
-.pass:hover {
-    text-decoration: underline;
-
-}
-input[type="submit"] {
-   width: 80%;
-   margin: 25px ;
-   height: 40px;
-   border-radius: 20px;
-   border: none;
-   font-size: 16px;
-   color: white;
-   background-color: #2980b9;
-}
-.sign{
-   margin: 10px 25px 0 25px;
-   color: #adadad;
-   text-decoration: none;  
-   text-align: center;
+.search-bar{
+    width: 100%;
+    outline: none;
+    border: 1px solid #adadad;
+    height: 30px;
 
 }
-.sign a {
-   text-decoration: none;
-   color: #2980b9;
+.search-bar::placeholder{
+    font-size: 18px;
 }
-.sign a:hover{
-   text-decoration: underline;
+.src-icon{
+    border: 1px solid #adadad;
+    width: 50px;
+    background-color: rgb(245, 241, 241);
+    height: 28px;
+    border: 1px solid #adadad;
+}
+.voice-button{
+    background: rgb(245, 241, 241);
+    margin: 0 0 0 10px;
+    border-radius: 20px;
+    height: 30px;
+    
+}
+.right-section{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.upload{
+    height: 30px;
+
+}
+.menu-2{
+    height: 30px;
+}
+.note{
+    position: relative;
+}
+.notification{
+    height: 30px;
+  
+}
+.notification-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    width:15px;
+    height: 15px;
+    border-radius: 7.5px;
+    font-size: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    color: white;
+
+}
+
+
+
+
+
    
+.profile-pic-2{
+    height: 30px;
+    border-radius: 15px;
+}
+.side-bar{
+    /*
+    
+    justify-content: space-between;
+    */
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    position: fixed;
+    top: 44;
+    bottom: 0px;
+    left: 0px;
+    width: 80px; 
+    z-index: 200;
+    background-color: white;
+                                                                                                       
+}
+.icons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+.icon{
+    height: 30px;
+}
+
+.pic{
+    z-index: 200;
+    width: 100%;
+    
+    
+}
+.image{
+    position: relative;
+}
+
+.time-stamp{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    z-index: 250;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    
+
+}
+.video-stats p {
+    
+    margin-top: 0;
+}
+.box{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;  
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+.container-2{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-top: 5px;
 }
